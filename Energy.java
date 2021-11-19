@@ -6,6 +6,8 @@
    * @since   2021-11-19  
    */
    
+   // Some info found on: https://www.javatpoint.com/java-math
+   
    import java.lang.Math;
   import java.util.Scanner;
   
@@ -14,7 +16,7 @@
      * This class is what calculates the energy released.
      */
     public static void main(String[] args) {
-      //Constant for the speed of light.
+      //Constant
       final double speedOfLight = 299800000;
   
       try {
@@ -22,13 +24,13 @@
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the mass of an object in kilograms: ");
   
-        // Read user input (double = decimal number)
+        // user input 
         double mass = scan.nextDouble();
   
-        //Closing Scanner
+        //Close Scanner
         scan.close();
   
-        // Calculates the energy 
+        // Calculates energy 
         double energy = (mass * Math.pow(speedOfLight, 2));
   
         // Prints answer
@@ -36,7 +38,7 @@
         System.out.println(energy + " joules of energy.");
         System.out.println("Done.");
   
-      // Catches invalid answer.
+      // Catches invalid 
       } catch (Exception e) {
         System.out.println("Invaild Input");
       }
